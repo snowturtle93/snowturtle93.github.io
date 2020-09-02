@@ -1,11 +1,12 @@
 ---
 title: MapR VS Cloudera
-author: Kang HyunGU
+author: Kang HyunGu
 date: 2020-08-27 18:34:00 +0900
 categories: [Bigdata, Hadoop]
 tags: [Bigdata]
 toc: false
 pin: true
+comments: true
 ---
 
 MapR 사업성 검토를위해 기존에 사업을 진행하고 있는 Cloudera와 비교 자료를 작성해보았다.
