@@ -1,5 +1,5 @@
 ---
 layout: category
-title: database
-category: database
+title: Database
+category: Database
 ---

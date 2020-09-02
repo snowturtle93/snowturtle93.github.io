@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: programming            
-tag: programming               
+title: Programming            
+tag: Programming               
 ---

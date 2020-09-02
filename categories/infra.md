@@ -1,5 +1,5 @@
 ---
 layout: category
-title: infra
-category: infra
+title: Infra
+category: Infra
 ---

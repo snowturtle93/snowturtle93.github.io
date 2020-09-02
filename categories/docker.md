@@ -1,5 +1,5 @@
 ---
 layout: category
-title: docker
-category: docker
+title: Docker
+category: Docker
 ---

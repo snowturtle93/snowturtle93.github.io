@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: database            
-tag: database               
+title: Database            
+tag: Database               
 ---

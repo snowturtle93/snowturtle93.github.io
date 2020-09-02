@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: infra            
-tag: infra               
+title: Infra            
+tag: Infra               
 ---

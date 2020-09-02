@@ -1,5 +1,5 @@
 ---
 layout: category
-title: rdbms
-category: rdbms
+title: RDBMS
+category: RDBMS
 ---

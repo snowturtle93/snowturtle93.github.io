@@ -1,5 +1,5 @@
 ---
 layout: category
-title: programming
-category: programming
+title: Scala
+category: Scala
 ---

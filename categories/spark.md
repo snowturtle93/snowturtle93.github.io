@@ -1,5 +1,5 @@
 ---
 layout: category
-title: spark
-category: spark
+title: Spark
+category: Spark
 ---
