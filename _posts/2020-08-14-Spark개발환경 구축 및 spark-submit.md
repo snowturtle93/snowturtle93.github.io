@@ -4,7 +4,7 @@ author: Kang HyunGu
 date: 2020-08-14 19:28:00 +0900
 categories: [Bigdata, Spark]
 tags: [Bigdata]
-toc: false
+toc: true
 pin: true
 comments: true
 ---

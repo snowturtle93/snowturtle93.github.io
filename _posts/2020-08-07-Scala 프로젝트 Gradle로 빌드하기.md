@@ -4,7 +4,7 @@ author: Kang HyunGu
 date: 2020-08-07 18:31:00 +0900
 categories: [Programming, Scala]
 tags: [Programming]
-toc: false
+toc: true
 pin: false
 comments: true
 ---

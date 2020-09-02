@@ -4,7 +4,7 @@ author: Kang HyunGu
 date: 2020-08-27 18:34:00 +0900
 categories: [Bigdata, Hadoop]
 tags: [Bigdata]
-toc: false
+toc: true
 pin: true
 comments: true
 ---
