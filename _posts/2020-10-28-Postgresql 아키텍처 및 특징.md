@@ -29,7 +29,6 @@ Postgresql 설치를 하면서 조금 공부를 한 내용을 정리한다.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data directory structure / Data files
 
 <p align="center"><img src="{{site.url}}/img/posts/2020-10-28-Postgresql 아키텍처 및 특징/PostgreSQL-Architecture1.jpg" width="600" height="400"></p>
-<br/>
 
 ### 1.1 Shared Memory
 Shared Memory는 트랜잭션 및 다른 로그 캐치용으로 할당 된 메모리로 Shared Buffers, WAL Buffers, Work Memory, Maintenance Work Memory로 구성되어있다.
@@ -98,7 +97,6 @@ Cluster에 대한 구분은 아래 3가지로 할 수 있다.
 PGDATA 디렉터리에는 여러 하위 디렉터리가 포함되어 있으며 제어 파일은 다음과 같습니다.
 
 <p align="center"><img src="{{site.url}}/img/posts/2020-10-28-Postgresql 아키텍처 및 특징/PostgreSQL-Architecture2.jpg" width="600" height="400"></p>
-<br/>
 
 - pg_version : 데이터베이스 버전 정보를 포함합니다.
 - base : 데이터베이스 하위 디렉토리를 포함합니다.
@@ -116,5 +114,7 @@ PGDATA 디렉터리에는 여러 하위 디렉터리가 포함되어 있으며 �
 - pid :  현재 포스트 마스터 프로세스 ID (PID)를 포함하는 파일.
 
 출처 [1]: https://www.educba.com/postgresql-architecture/
+<br/>
 출처 [2]: https://waspro.tistory.com/146
+<br/>
 출처 [3]: http://www.gurubee.net/lecture/2889
