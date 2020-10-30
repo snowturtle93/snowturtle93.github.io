@@ -2,7 +2,7 @@
 title: "Postgresql 아키텍처 및 특징."
 author: Kang HyunGu
 date: 2020-10-28 18:32:00 +0900
-categories: [Database, RDBMS]
+categories: [Database, PostgreSQL]
 tags: [Database]
 toc: true
 pin: true
