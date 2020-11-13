@@ -64,6 +64,9 @@ Work Memory에 비해 큰 Maintenance Work Memory를 설정하는 것이 안전�
 
 여기서 VACCUM은 Postgresql MVCC(다중 버전 동시성 제어)를 구현하기 위한 방법으로 데이터를 UPDATE 또는 DELETE시에 디스크에 있던 기존 정보를 갱신하거나 삭제하지 않고 기존 정보는 변경되었다는 표시를 남기고 새롭게 디스크에 UPDATE된 정보를 기록하는데 이 과정에서 DELETE 했어도 디스크 용량은 줄어들지 않으며 UPDATE 시에는 새로운 행이 추가되기 때문에 디스크 용량이 증가한다 이때 이 낭비된 공간을 제거해주는 명령어가 VACCUM이다.
 (DBMS별 MVCC 구현 방법은 다음 포스팅에서 공부해서 올려야겠다.)
+
+
+### 1.2 Background Processes
 1) Postmaster 프로세스는 제일 앞단에서 Client와 맞닫는 프로세스입니다.
 
 - PostgreSQL 기동할 때 가장 먼저 시작되는 프로세스이다.
@@ -73,7 +76,6 @@ Work Memory에 비해 큰 Maintenance Work Memory를 설정하는 것이 안전�
 - 데몬 프로세스로 Client 프로세스의 접속 요청을 받아 Backend 프로세스를 생성한다.
 
 
-### 1.2 Background Processes
 2) Background Processes는 로그, 통계 등 백그라운드에서 배치성으로 돌아가는 프로세스입니다.
 
 - logger : 에러 메시지를 로그 파일에 기록한다.
