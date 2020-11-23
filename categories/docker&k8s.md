@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Docker&k8s
-category: Docker
+title: Docker&K8s
+category: Docker&K8s
 ---

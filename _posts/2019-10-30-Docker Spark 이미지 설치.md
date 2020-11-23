@@ -2,7 +2,7 @@
 title: Docker Spark 이미지 설치
 author: Kang HyunGu
 date: 2019-10-30 18:57:00 +0900
-categories: [Infra, Docker&k8s]
+categories: [Infra, Docker&K8s]
 tags: [Infra]
 toc: true
 pin: false
