@@ -17,7 +17,6 @@ Docker Run은 이름에서 알수 있듯이 Docker 이미지로 컨테이너를 
 docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 ```
 <br/>
-
 ## 2. Docker Run 기본  옵션
 <br/>
 기본적으로 docker run --help 명령어로 docker run 옵션을 알 수 있지만 자주 쓰는 옵션을 정리해보려고 한다.
