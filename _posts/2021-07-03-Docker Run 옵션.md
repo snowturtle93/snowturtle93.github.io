@@ -47,13 +47,14 @@ docker run -d -e AIRFLOW_HOME=/home/airflow/airflow my_test_image
 ```
 docker run -d -v -v $PWD:/home/airflow my_test_image
 ```
+
 ## 3. 네트워크 옵션
-#### 3.1 -p 옵션
+### 3.1 -p 옵션
 컨테이너의 포트를 포워딩 하는 옵션으로 아래와 같이 옵션을 적용하면 컨테이너의 80포트를 로컬의 8080포트로 포워딩한다.
 ```
 docker run -d -p 8080:80 my_test_image
 ```
-#### 3.2 --net 옵션
+### 3.2 --net 옵션
 Docker에서 아래 명령어로 네트워크를 만들면 만들어진 네트워크안에 속하는 컨테이너를 만들어 컨테이너간의 통신을 가능하게 한다.
 ```
 docker network create [OPTIONS] [NETWORK NAME]
