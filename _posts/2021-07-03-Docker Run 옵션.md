@@ -5,7 +5,7 @@ date: 2021-07-03 17:36:00 +0900
 categories: [Infra, Docker&K8s]
 tags: [Infra]
 toc: true
-pin: false
+pin: true
 comments: true
 ---
 
