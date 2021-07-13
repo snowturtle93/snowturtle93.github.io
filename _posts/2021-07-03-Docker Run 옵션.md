@@ -44,7 +44,7 @@ docker run -d -e AIRFLOW_HOME=/home/airflow/airflow my_test_image
 로컬과 컨테이너 간의 볼륨을 설정하기 위해 사용되는데 로컬 파일시스템의 특정경로를 컨테이너의 파일시스템에 특정 경로로 마운트 시킨다.
 * 아래 명령어는 컨테이너를 실행시키는 현재 디렉토리를 컨테이너안의 /home/airflow에 마운트시켜 컨테이너가 종료되어도 /home/airflow안의 파일이 삭제되지않게 해주는 명령어이다.
 ```
-docker run -d -v -v $PWD:/home/airflow my_test_image
+docker run -d -v $PWD:/home/airflow my_test_image
 ```
 
 ## 3. 네트워크 옵션
