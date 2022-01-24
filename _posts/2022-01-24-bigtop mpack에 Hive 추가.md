@@ -19,11 +19,11 @@ metainfo.xml 파일
 <p align="left"> <img src="{{site.url}}/img/posts/bigtop/common_service.png" width="600" height="350"></p>
 
 그래서 /var/lib/ambari-server/resources/mpacks/bgtp-ambari-mpack-1.0.0.0-SNAPSHOT/stacks/BGTP/1.0/services/HIVE 경로에 HIVE 디렉토리를 만들고 아래와 같이 metainfo.xml을 작성해보았다.
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_metainfo.png" width="900" height="400"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_metainfo.png" width="600" height="300"></p>
 
 아래 경로에 링크를 걸어줘야하는거 같아 링크를 걸어주었다.
 /var/lib/ambari-server/resources/stacks/BGTP/1.0/services
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/stack1.png" width="600" height="200"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/stack1.png" width="400" height="100"></p>
 
 - Hive 추가 확인.
 아래 처럼 추가가된걸 확인했는데 설치 진행시 아래와 같은 에러가 발생.
