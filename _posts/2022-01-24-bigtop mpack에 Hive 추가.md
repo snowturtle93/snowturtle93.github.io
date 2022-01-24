@@ -1,3 +1,13 @@
+---
+title: "bigtop mpack에 Hive 추가"
+author: Kang HyunGu
+date: 2022-01-24 19:26:00 +0900
+categories: [Bigdata, Hadoop]
+tags: [Bigdata]
+toc: true
+pin: true
+comments: true
+---
 
 ## 1. Stack에 HIVE 추가.
 Stack 디렉토리에 HDFS에 metainfo 파일을 보니 common-service라는 디렉토리에 있는 파일을 가지고 설치를 진행하는듯하다.
