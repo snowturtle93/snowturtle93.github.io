@@ -28,8 +28,8 @@ metainfo.xml 파일
 - Hive 추가 확인.
 아래 처럼 추가가된걸 확인했는데 설치 진행시 아래와 같은 에러가 발생.
 <p align="left"> <img src="{{site.url}}/img/posts/bigtop/ambari4.png" width="700" height="300"></p>
-<pre><code>
 
+```
 stderr:
 Traceback (most recent call last):
   File "/var/lib/ambari-agent/cache/common-services/HIVE/0.12.0.2.0/package/scripts/hcat_client.py", line 79, in <module>
@@ -82,13 +82,12 @@ resource_management.core.exceptions.Fail: Configuration parameter 'hive_security
 2022-01-21 17:48:42,367 - Skipping installation of existing package curl
 2022-01-21 17:48:42,623 - Skipping get_stack_version since /usr/bin/distro-select is not yet available
 2022-01-21 17:48:42,623 - Stack Feature Version Info: Cluster Stack=1.0, Command Stack=None, Command Version=None -> 1.0
-
 Command failed after 1 tries
 
-</code></pre>
+```
 
-2 HIVE 사용하기 위한 common-service 커스텀
-2.1
+## 2 HIVE 사용하기 위한 common-service 커스텀
+
 /var/lib/ambari-server/resources/common-services/HIVE/0.12.0.2.0/package/scripts/params_linux.py 파일 수정.
 <p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_custom1.png" width="900" height="400"></p>
 /var/lib/ambari-server/resources/common-services/HIVE/0.12.0.2.0/metainfo.xml 파일 수정.
