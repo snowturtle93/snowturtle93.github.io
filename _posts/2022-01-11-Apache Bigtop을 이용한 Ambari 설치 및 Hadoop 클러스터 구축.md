@@ -142,7 +142,7 @@ use ambari;
 SOURCE /var/lib/ambari-server/resources/Ambari-DDL-MySQL-CREATE.sql;
 </code></pre>
 
-## 9.Ambari 설치
+## 8.Ambari 설치
 
 - mysql jdbc 커넥터 설치.
 sudo yum install mysql-connector-java*
