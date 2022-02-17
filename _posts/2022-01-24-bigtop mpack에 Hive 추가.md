@@ -104,9 +104,9 @@ webhcat 실행시에도 에러가 발생하여 설치에서 제외시켰다(사�
 
 ## 5. 설치 성공
 ambari에 추가된 모습.
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/success.PNG" width="700" height="400"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/success.PNG" width="700" height="250"></p>
 처음에 hive설치시 에러가 발생해서 확인해보니 /etc/hive/conf파일에 hive-site.xml이 수정이 안되어있어서 접근이 안되는거 같아 수정을 한뒤 아래와 같이 test_db를 만들어 확인해보았다.
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive.PNG" width="700" height="400"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive.PNG" width="700" height="250"></p>
 
 ## 6. 정리
 이번 기회에 ambari stack에 대해 조금 알게되었지만 소스 레벨을 모두 파악한것은 아니라 에러 해결에만 급급하게 설치했던거 같다.
