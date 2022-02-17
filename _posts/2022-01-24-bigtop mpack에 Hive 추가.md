@@ -112,4 +112,6 @@ ambari에 추가된 모습.
 이번 기회에 ambari stack에 대해 조금 알게되었지만 소스 레벨을 모두 파악한것은 아니라 에러 해결에만 급급하게 설치했던거 같다.
 아래 ambari stack관련 메뉴얼과 기존에 있던 hdp 소스를 분석하면 custom stack을 만들어 입맛에 맞게 구성할 수 있을거 같아 분석을 해보는게 좋을것 같다.
 아래 내가 적용했던 소스를 github에 올려두었다.
+
+
 [github링크](https://github.com/snowturtle93/bgtp-mpack)
