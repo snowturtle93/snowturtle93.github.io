@@ -86,10 +86,30 @@ Command failed after 1 tries
 
 ```
 
-## 2 HIVE 사용하기 위한 common-service 커스텀
+## 2. hive_security_authorization 에러 해결
+에러를 보니 hive_security_authorization 파라미터가 설정이 안되어있어 발생하는거 같아 /var/lib/ambari-server/resources/common-services/HIVE/0.12.0.2.0/configuration/hive-env.xml에 아래와 같이 추가를 해주었다.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_security_authorization_add.PNG" width="700" height="300"></p>
+진행 하다 보니 hcatalog 서비스 설치시 hcat이라는 유저를 만들기를 시도하는데 에러가 발생해 아래와같이 hive유저로 변경을 해주었다.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_env.PNG" width="700" height="300"></p>
+## 3. linux_param 파일 수정.
+bigtop 유틸로 하이브를 설치하기 때문에 몇가지 디렉토리 경로를 아래와 같이 바꿔준다.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/linuxt_param.PNG" width="700" height="300"></p>
 
-/var/lib/ambari-server/resources/common-services/HIVE/0.12.0.2.0/package/scripts/params_linux.py 파일 수정.
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_custom1.png" width="900" height="400"></p>
-/var/lib/ambari-server/resources/common-services/HIVE/0.12.0.2.0/metainfo.xml 파일 수정.
-hcatalog -> hive-hcatalog.noarch (bigtop 패키지)로 변경.
-<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive_custom2.png" width="900" height="400"></p>
+## 4. metainfo.xml 수정.
+이번엔 hcatalog라는 패키지가 bigtop 레파지토리에 없어서 에러가 발생했다.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/error2.PNG" width="700" height="300"></p>
+설치하는 패키지가 기본이 아닌 bigtop 레파지토리에서 받기 때문에 metainfo.xml을 아래와 같이 수정을 한다.
+webhcat 실행시에도 에러가 발생하여 설치에서 제외시켰다(사용하지 않음)
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/metainfo.PNG" width="500" height="200"></p>
+
+## 5. 설치 성공
+ambari에 추가된 모습.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/success.PNG" width="700" height="400"></p>
+처음에 hive설치시 에러가 발생해서 확인해보니 /etc/hive/conf파일에 hive-site.xml이 수정이 안되어있어서 접근이 안되는거 같아 수정을 한뒤 아래와 같이 test_db를 만들어 확인해보았다.
+<p align="left"> <img src="{{site.url}}/img/posts/bigtop/hive.PNG" width="700" height="400"></p>
+
+## 6. 정리
+이번 기회에 ambari stack에 대해 조금 알게되었지만 소스 레벨을 모두 파악한것은 아니라 에러 해결에만 급급하게 설치했던거 같다.
+아래 ambari stack관련 메뉴얼과 기존에 있던 hdp 소스를 분석하면 custom stack을 만들어 입맛에 맞게 구성할 수 있을거 같아 분석을 해보는게 좋을것 같다.
+아래 내가 적용했던 소스를 github에 올려두었다.
+[github링크](https://github.com/snowturtle93/bgtp-mpack)
