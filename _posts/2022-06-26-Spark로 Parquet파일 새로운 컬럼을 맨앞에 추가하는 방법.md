@@ -5,7 +5,7 @@ date: 2022-06-26 21:38:00 +0900
 categories: [Bigdata, Spark]
 tags: [Bigdata]
 toc: true
-pin: true
+pin: false
 comments: true
 ---
 

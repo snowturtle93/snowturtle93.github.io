@@ -5,7 +5,7 @@ date: 2020-10-28 18:32:00 +0900
 categories: [Database, PostgreSQL]
 tags: [Database]
 toc: true
-pin: true
+pin: false
 comments: true
 ---
 Informatica PowerCenter가 MetaDB로 Postgresql을 지원하면서 관세청에 PowerCenter가 납품 될 때 Postgresql과 같이 납품이 되어 Postgresql을 설치했다.

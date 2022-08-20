@@ -5,7 +5,7 @@ date: 2022-01-11 20:36:00 +0900
 categories: [Bigdata, Hadoop]
 tags: [Bigdata]
 toc: true
-pin: true
+pin: false
 comments: true
 ---
 

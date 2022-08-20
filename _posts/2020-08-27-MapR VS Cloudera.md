@@ -5,7 +5,7 @@ date: 2020-08-27 18:34:00 +0900
 categories: [Bigdata, Hadoop]
 tags: [Bigdata]
 toc: true
-pin: true
+pin: false
 comments: true
 ---
 
