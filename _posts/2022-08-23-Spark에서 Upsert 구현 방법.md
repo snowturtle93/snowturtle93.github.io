@@ -16,7 +16,7 @@ A를 기준으로 left anti join 수행.
 
 2. 신규로 추가되는 테이블만 추출   
 B를 기준으로 left anti join 수행.
-<p align="left"> <img src="{{site.url}}/img/posts/left_anti_joinA.png" width="200" height="140"></p>  
+<p align="left"> <img src="{{site.url}}/img/posts/left_anti_joinB.png" width="200" height="140"></p>  
 
 3. 공통된 테이블은 신규로 추가되는 테이블로 대체.  
 키값을 기준으로 A와 B에 교집합인 데이터는 B의 데이터로 교체 작업 수행.
