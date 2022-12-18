@@ -11,11 +11,10 @@ comments: true
 
 # Spark가 Lazy Evaluation을 사용하는 이유
 
-<p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.jpeg" width="600" height="450"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.png" width="600" height="450"></p>
+
 <center>
-
-[이미지 출처](https://www.facebook.com/cheongjeul/posts/1607810786091040/?comment_id=1610467795825339)
-
+게으른게 아니라 완벽주의라는 오은영 선생님의 말씀..
 </center>
 
 ## Lazy Evaluation이란?
@@ -56,8 +55,8 @@ Lazy Evaluation을 사용하면 Spark는 실제로 필요한 중간 결과값만
 꼭 필요한 연산만 처리할 수 있기 때문에 드라이버와 클러스터 간의 데이터 이동이 절약되므로 프로세스를 빠르게 할 수 있다.
 
 
-[참고 1] https://towardsdatascience.com/3-reasons-why-sparks-lazy-evaluation-is-useful-ed06e27360c4
+[참고 1] <https://towardsdatascience.com/3-reasons-why-sparks-lazy-evaluation-is-useful-ed06e27360c4>
 <br>
-[참고 2] https://data-flair.training/blogs/apache-spark-lazy-evaluation/
+[참고 2] <https://data-flair.training/blogs/apache-spark-lazy-evaluation>
 <br>
-[참고 3] https://medium.com/analytics-vidhya/being-lazy-is-useful-lazy-evaluation-in-spark-1f04072a3648
+[참고 3] <https://medium.com/analytics-vidhya/being-lazy-is-useful-lazy-evaluation-in-spark-1f04072a3648>
