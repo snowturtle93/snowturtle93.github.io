@@ -11,7 +11,7 @@ comments: true
 
 # Spark가 Lazy Evaluation을 사용하는 이유
 
-<p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.png" width="600" height="450"></p>
+<p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.png" width="550" height="400"></p>
 
 <center>
 게으른 게 아니라 완벽주의라는 오은영 선생님의 말씀.. 스파크도???
