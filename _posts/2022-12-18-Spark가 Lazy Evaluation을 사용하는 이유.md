@@ -13,7 +13,7 @@ comments: true
 
 <p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.png" width="550" height="400"></p>
 <center>
-게으른 게 아니라 완벽주의라는 오은영 선생님의 말씀.. 스파크도???
+게으른 게 아니라 완벽주의라는 오은영 박사님의 말씀.. 스파크도???
 </center>
 
 ## Lazy Evaluation이란?
