@@ -8,6 +8,7 @@ toc: true
 pin: false
 comments: true
 ---
+
 #Spark가 Lazy Evaluation을 사용하는 이유
 
 <p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.jpeg" width="600" height="450"></p> <br/>
@@ -32,7 +33,7 @@ Spark에서 실제 데이터 처리가 수행되는 함수로 대표적으로는
 Spark에서 Lazy Evaluation를 사용하는 이유를 설명하기 전에 추가로 하나 더 알면 좋은 Catalyst Optimizer에 대해서 짧게 설명 하도록 한다.
 
 Spark에서 Transformation을 수행하게 되면 Spark는 프로그래밍 되어있는 데이터 처리 순서에 맞게 DAG(비순환 그래프)를 생성하며 Catalyst Optimizer는 생성된 DAG를 분석하여 비용 또는 규칙 기반 최적화를 수행하여 논리적 실행 계획과 물리적 실행 게획은 세우게 된다.
-<p align="left"> <img src="{{site.url}}/img/posts/Catalyst-Optimizer-diagram.png" width="600" height="450"></p> <br/>
+<p align="left"> <img src="{{site.url}}/img/posts/Catalyst-Optimizer-diagram.png" width="600" height="350"></p> <br/>
 
 ##Lazy Evaluation을 사용하는 이유
 Lazy Evaluation 무엇인지 알았으면 이제 Spark에서는 왜 사용하는지 알아볼 차례이다.
