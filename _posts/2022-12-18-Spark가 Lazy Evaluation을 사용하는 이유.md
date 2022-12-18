@@ -29,14 +29,15 @@ Spark에서 Transformation함수는 DataFrame을 원하는 방식으로 수정�
 
 ### Action 함수
 Spark에서 실제 데이터 처리가 수행되는 함수로 대표적으로는 count, reduce, save, write 함수들이 있다.
-</br>
+<br>
 이처럼 Spark는 Action 함수가 호출 되기 전까지는 아무리 많은 Transformation함수를 호출 하더라고 데이터 처리를 하지않는 Lazy Evaluation을 사용한다.
 
 ## Catalyst Optimizer
 Spark에서 Lazy Evaluation를 사용하는 이유를 설명하기 전에 추가로 하나 더 알면 좋은 Catalyst Optimizer에 대해서 짧게 설명 하도록 한다.
-</br>
+<br>
 Spark에서 Transformation을 수행하게 되면 Spark는 프로그래밍 되어있는 데이터 처리 순서에 맞게 DAG(비순환 그래프)를 생성하며 Catalyst Optimizer는 생성된 DAG를 분석하여 비용 또는 규칙 기반 최적화를 수행하여 논리적 실행 계획과 물리적 실행 게획은 세우게 된다.
-<p align="left"> <img src="{{site.url}}/img/posts/Catalyst-Optimizer-diagram.png" width="600" height="300"></p> <br/>
+<p align="left"> <img src="{{site.url}}/img/posts/Catalyst-Optimizer-diagram.png" width="600" height="300"></p>
+
 
 ## Lazy Evaluation을 사용하는 이유
 Lazy Evaluation 무엇인지 알았으면 이제 Spark에서는 왜 사용하는지 알아볼 차례이다.
@@ -44,7 +45,7 @@ Lazy Evaluation을 사용하는 이유는 아래와 같다.
 
 ### 1. 불필요한 데이터 처리를 생략할 수 있다
 만약 Spark에서 Transformation 함수 호출 시에 즉시 데이터 처리를 하게 된다면 아래와 같이 비효율적인 상황이 발생할 수 있다.
-</br>
+<br>
 가령 데이터 프레임을 처리하면서 map 함수를 사용하여 100만 건의 데이터를 모두 20을 더한 뒤에 다음 코드에서 4를 추가로 더한다면 Spark가 즉시 처리하게 된다면 2번 데이터 처리가 발생하지만, Lazy Evaluation을 한다면 [Catalyst Optimizer](databricks.com/blog/2015/04/13/deep-dive-into-spark-sqls-catalyst-optimizer.html)가 1번의 데이터 처리할 수 있도록 물리적 실행계획을 세워주게 된다.
 
 ### 2. 메모리 관리의 효울성
@@ -56,7 +57,7 @@ Lazy Evaluation을 사용하면 Spark는 실제로 필요한 중간 결과값만
 
 
 [참고 1] https://towardsdatascience.com/3-reasons-why-sparks-lazy-evaluation-is-useful-ed06e27360c4
-</br>
+<br>
 [참고 2] https://data-flair.training/blogs/apache-spark-lazy-evaluation/
-</br>
+<br>
 [참고 3] https://medium.com/analytics-vidhya/being-lazy-is-useful-lazy-evaluation-in-spark-1f04072a3648
