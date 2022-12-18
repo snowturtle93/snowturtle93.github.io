@@ -13,7 +13,7 @@ comments: true
 
 <p align="left"> <img src="{{site.url}}/img/posts/lazy_spark.jpeg" width="600" height="450"></p> <br/>
 
-[이미지 출처](https://www.facebook.com/cheongjeul/posts/1607810786091040/?comment_id=1610467795825339)
+<center> [이미지 출처](https://www.facebook.com/cheongjeul/posts/1607810786091040/?comment_id=1610467795825339) </center>
 
 ##Lazy Evaluation이란?
 우선 Lazy Evaluation이란 개념은 Spark에서 생긴 개념은 아니며 프로그래밍에서 불필요한 연산을 줄이고자 생긴 연산 전략이다.
